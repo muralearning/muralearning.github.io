@@ -1,29 +1,28 @@
-# Thiago Murari — Personal Academic Website
+# MuraLearning — Bento Grid
 
-Bilingual academic profile (Portuguese/English), inspired by the editorial structure of academic faculty websites. The design and wording are original.
+Site estático para GitHub Pages, baseado nos arquivos HTML e CSS fornecidos.
 
-## Publish on GitHub Pages
+## Estrutura
 
-1. Create a public repository named `muralearning.github.io`.
-2. Upload the contents of this folder to the repository root. Keep `index.html` at the root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-5. After deployment, visit https://muralearning.github.io/.
+- `index.html` — página principal
+- `assets/css/style.css` — estilos Bento Grid
+- `assets/js/main.js` — alternância de tema, idioma, ano e carregamento dos repositórios públicos do GitHub
+- `assets/favicon.svg` — ícone do site
 
-## Files
+## Publicar no GitHub Pages
 
-- `index.html`: page structure and content
-- `assets/css/style.css`: typography, layout, responsive styles
-- `assets/js/main.js`: PT/EN language switch, mobile navigation, active section
-- `assets/favicon.svg`: site icon
+1. Crie ou abra o repositório `muralearning.github.io`.
+2. Copie todos os arquivos desta pasta para a raiz do repositório, mantendo a estrutura `assets/`.
+3. Faça commit e push para a branch `main`.
+4. Em **Settings → Pages**, selecione **Deploy from a branch**, branch `main`, pasta `/ (root)`.
+5. A página deverá ficar disponível em `https://muralearning.github.io/`.
 
-## Before publishing
+## Antes de publicar
 
-- Replace the portrait placeholder with a professional photograph you have permission to publish.
-- Add verified ORCID, Google Scholar, Lattes, institutional profile, and email links.
-- Add selected publications with correct titles, authors, year, journal/conference, and DOI.
-- Verify current job titles, official affiliations, programs, and project names.
-- Add direct links to repositories with public documentation.
-- Review both Portuguese and English text. Do not publish confidential or internal information.
+- Substitua os links genéricos de ORCID/Lattes, Google Scholar e LinkedIn pelos perfis corretos.
+- Atualize as publicações e os materiais de ensino com títulos, URLs, DOI e informações verificadas.
+- Se desejar disponibilizar um endereço de e-mail, substitua o link do botão de contato pelo endereço correto.
+- O carregamento automático dos repositórios depende do acesso à API pública do GitHub e de disponibilidade da conexão.
+- A fonte Inter e os ícones Lucide são carregados por CDN, portanto dependem de conexão à internet.
 
-This site uses plain HTML, CSS, and JavaScript; no build step is required. Google Fonts are used as an optional enhancement, with system fallbacks.
+O site inclui alternância de tema claro/escuro, alternância de idioma Português/Inglês e layout responsivo para computadores, tablets e telemóveis.

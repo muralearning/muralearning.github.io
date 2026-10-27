@@ -1,39 +1,229 @@
-const translations = {
-pt:{
-menu:"Menu",role_short:"Professor e pesquisador",nav_home:"Início",nav_research:"Pesquisa",nav_engagement:"Atuação acadêmica",nav_publications:"Publicações",nav_software:"Software e métodos",nav_bio:"Biografia",nav_contact:"Contato",repositories:"Repositórios ↗",sidebar_note:"Pesquisa aplicada, métodos computacionais e inovação.",topline:"PÁGINA ACADÊMICA PESSOAL",open_collab:"Aberto a colaborações",
-intro_label:"PESQUISA · TECNOLOGIA · SOCIEDADE",headline:"A ciência ganha força quando métodos rigorosos encontram problemas reais.",intro:"Sou professor e pesquisador no SENAI CIMATEC. Trabalho na interface entre inovação industrial, inteligência artificial e sistemas complexos, com interesse no desenvolvimento de métodos computacionais confiáveis e aplicações com impacto.",position:"Professor Adjunto",explore_research:"Conheça minha pesquisa ↓",photo_hint:"Adicione sua fotografia",
-research_kicker:"AGENDA DE PESQUISA",research_title:"Perguntas que orientam meu trabalho",research_intro:"Minha atuação combina experiência industrial e investigação interdisciplinar, conectando formulação conceitual, análise quantitativa e desenvolvimento de ferramentas.",r1_title:"Sistemas complexos e econofísica",r1_text:"Dependência temporal, correlações cruzadas, multifractalidade e análise de informação em séries temporais.",r2_title:"Inteligência artificial aplicada",r2_text:"Modelos de linguagem, recuperação aumentada por geração (RAG) e extração confiável de informações em contextos industriais.",r3_title:"Inovação e Indústria 4.0",r3_text:"Capacidades tecnológicas, transformação digital e desenvolvimento de soluções para desafios industriais.",r4_title:"Mobilidade e sustentabilidade",r4_text:"Sistemas sociotécnicos, transições tecnológicas e desafios relacionados à sustentabilidade.",
-engagement_kicker:"ATUAÇÃO ACADÊMICA",engagement_title:"Pesquisa, formação e colaboração",e1_title:"Pós-graduação",e1_text:"Atuação em programas de pós-graduação, orientação e formação interdisciplinar em gestão, tecnologia e modelagem computacional.",e2_title:"Pesquisa aplicada",e2_text:"Participação em iniciativas de pesquisa que conectam instituições, desenvolvimento metodológico e necessidades da indústria.",e3_title:"Colaboração científica",e3_text:"Interesse em projetos interdisciplinares, intercâmbio científico e compartilhamento de métodos e recursos reproduzíveis.",verify_note:"Nota: revise os cargos, os nomes oficiais das iniciativas e os vínculos institucionais antes da publicação definitiva.",
-publications_kicker:"PRODUÇÃO CIENTÍFICA",publications_title:"Publicações em destaque",publications_intro:"Esta seção deve destacar trabalhos representativos, com metadados completos e links persistentes para os artigos.",pub_add_title:"Adicione publicações selecionadas",pub_add_text:"Para cada artigo, inclua título, coautores, periódico ou conferência, ano e DOI. Também é possível conectar ORCID, Google Scholar e Currículo Lattes.",academic_profiles:"Perfis acadêmicos",add_verified_links:"Adicionar links verificados →",
-software_kicker:"SOFTWARE E MÉTODOS",software_title:"Métodos computacionais e recursos abertos",software_intro:"Repositórios com código, documentação, testes e exemplos permitem que outros pesquisadores inspecionem, reproduzam e ampliem os resultados.",github_profile:"PERFIL GITHUB",software_callout_title:"Explore código e ferramentas de pesquisa",software_callout_text:"Acesse os repositórios para encontrar projetos, implementações e recursos computacionais.",
-bio_kicker:"BIOGRAFIA",bio_title:"Da engenharia de produto à pesquisa interdisciplinar",bio_p1:"Minha trajetória profissional inclui experiência em desenvolvimento de produtos industriais e inovação digital, seguida por atuação acadêmica em pesquisa, ensino e desenvolvimento tecnológico.",bio_p2:"Atualmente, meus interesses se concentram na integração entre inteligência artificial, métodos quantitativos, sistemas complexos e inovação, buscando produzir conhecimento rigoroso e ferramentas úteis para problemas concretos.",bio_note:"Amplie esta seção com formação acadêmica, marcos profissionais e links para o currículo completo.",
-contact_kicker:"CONTATO",contact_title:"Vamos construir conexões de pesquisa.",contact_intro:"Para conversar sobre colaboração científica, projetos, métodos computacionais ou formação de pesquisadores, entre em contato pelos canais acadêmicos abaixo.",email_placeholder:"Adicione seu e-mail institucional",footer_note:"Página acadêmica pessoal · Atualizada periodicamente",back_top:"Voltar ao topo ↑"
-},
-en:{
-menu:"Menu",role_short:"Professor & Researcher",nav_home:"Home",nav_research:"Research",nav_engagement:"Academic engagement",nav_publications:"Publications",nav_software:"Software & methods",nav_bio:"Biography",nav_contact:"Contact",repositories:"Repositories ↗",sidebar_note:"Applied research, computational methods, and innovation.",topline:"PERSONAL ACADEMIC WEBSITE",open_collab:"Open to collaboration",
-intro_label:"RESEARCH · TECHNOLOGY · SOCIETY",headline:"Science becomes more powerful when rigorous methods meet real-world problems.",intro:"I am a professor and researcher at SENAI CIMATEC. My work sits at the intersection of industrial innovation, artificial intelligence, and complex systems, with an interest in developing reliable computational methods and impactful applications.",position:"Adjunct Professor",explore_research:"Explore my research ↓",photo_hint:"Add your photograph",
-research_kicker:"RESEARCH AGENDA",research_title:"Questions that guide my work",research_intro:"My work combines industrial experience with interdisciplinary inquiry, connecting conceptual framing, quantitative analysis, and tool development.",r1_title:"Complex systems and econophysics",r1_text:"Temporal dependence, cross-correlations, multifractality, and information analysis in time series.",r2_title:"Applied artificial intelligence",r2_text:"Language models, retrieval-augmented generation (RAG), and reliable information extraction in industrial settings.",r3_title:"Innovation and Industry 4.0",r3_text:"Technological capabilities, digital transformation, and solution development for industrial challenges.",r4_title:"Mobility and sustainability",r4_text:"Sociotechnical systems, technological transitions, and sustainability challenges.",
-engagement_kicker:"ACADEMIC ENGAGEMENT",engagement_title:"Research, education, and collaboration",e1_title:"Graduate education",e1_text:"Involvement in graduate programs, supervision, and interdisciplinary education in management, technology, and computational modeling.",e2_title:"Applied research",e2_text:"Participation in research initiatives connecting institutions, methodological development, and industrial needs.",e3_title:"Scientific collaboration",e3_text:"Interest in interdisciplinary projects, scientific exchange, and sharing reproducible methods and resources.",verify_note:"Note: verify titles, official initiative names, and institutional affiliations before final publication.",
-publications_kicker:"SCHOLARLY WORK",publications_title:"Selected publications",publications_intro:"Use this section to highlight representative work with complete metadata and persistent links to papers.",pub_add_title:"Add selected publications",pub_add_text:"For each paper, include title, co-authors, journal or conference, year, and DOI. You can also link ORCID, Google Scholar, and your Lattes CV.",academic_profiles:"Academic profiles",add_verified_links:"Add verified links →",
-software_kicker:"SOFTWARE & METHODS",software_title:"Computational methods and open resources",software_intro:"Repositories with code, documentation, tests, and examples allow other researchers to inspect, reproduce, and extend results.",github_profile:"GITHUB PROFILE",software_callout_title:"Explore research code and tools",software_callout_text:"Visit the repositories to find projects, implementations, and computational resources.",
-bio_kicker:"BIOGRAPHY",bio_title:"From product engineering to interdisciplinary research",bio_p1:"My professional background includes industrial product development and digital innovation, followed by academic work in research, teaching, and technology development.",bio_p2:"My current interests focus on integrating artificial intelligence, quantitative methods, complex systems, and innovation to produce rigorous knowledge and useful tools for concrete problems.",bio_note:"Expand this section with education, professional milestones, and a link to your full CV.",
-contact_kicker:"CONTACT",contact_title:"Let's build research connections.",contact_intro:"For scientific collaboration, projects, computational methods, or researcher training, please use the academic channels below.",email_placeholder:"Add your institutional email",footer_note:"Personal academic website · Updated periodically",back_top:"Back to top ↑"
-}};
-let currentLang="pt";
-const langButton=document.getElementById("language-button");
-function setLanguage(lang){
- currentLang=lang;document.documentElement.lang=lang==="pt"?"pt-BR":"en";
- document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(translations[lang][key])el.textContent=translations[lang][key];});
- langButton.textContent=lang==="pt"?"EN":"PT";
-}
-langButton.addEventListener("click",()=>setLanguage(currentLang==="pt"?"en":"pt"));
-const sidebar=document.getElementById("sidebar"),mobileMenu=document.getElementById("mobile-menu");
-mobileMenu.addEventListener("click",()=>{const open=sidebar.classList.toggle("open");mobileMenu.setAttribute("aria-expanded",String(open));});
-document.querySelectorAll(".side-nav a").forEach(a=>a.addEventListener("click",()=>{sidebar.classList.remove("open");mobileMenu.setAttribute("aria-expanded","false");}));
-const sections=[...document.querySelectorAll("main section[id], main[id]")];
-const navLinks=[...document.querySelectorAll(".nav-link")];
-if("IntersectionObserver" in window){
- const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+entry.target.id));}}),{rootMargin:"-25% 0px -65% 0px"});
- document.querySelectorAll("main section[id]").forEach(s=>observer.observe(s));
-}
-document.getElementById("year").textContent=new Date().getFullYear();
+/* MuraLearning — Bento Grid interactions */
+(() => {
+  "use strict";
+
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+
+  // Icons and current year.
+  if (window.lucide && typeof window.lucide.createIcons === "function") {
+    window.lucide.createIcons();
+  }
+  const year = $("#year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  // Theme: use saved preference, otherwise follow the operating system.
+  const root = document.documentElement;
+  const themeButton = $("#theme-toggle");
+  let initialTheme = "light";
+  try {
+    initialTheme = localStorage.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  } catch (_) {}
+  root.setAttribute("data-theme", initialTheme);
+
+  if (themeButton) {
+    themeButton.addEventListener("click", () => {
+      const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", nextTheme);
+      try { localStorage.setItem("theme", nextTheme); } catch (_) {}
+    });
+  }
+
+  // Portuguese/English toggle. Content not included here can be edited directly in index.html.
+  const translations = {
+    pt: {
+      status: "Ativo em Pesquisa & Ensino",
+      heroSubtitle: "Espaço dedicado a <strong>Aprendizagem de Máquina, Ciência de Dados e Desenvolvimento</strong>, com materiais educativos e científicos.",
+      linksTitle: "Links & Perfis",
+      featuredBadge: "Em Destaque",
+      featuredTitle: "Laboratório & Notebooks",
+      featuredText: "Coleção interativa de scripts, notebooks práticos e experimentos aplicados.",
+      featuredCta: "Explorar Projetos",
+      coursesTitle: "Materiais de Ensino & Guias",
+      moduleOne: "MÓDULO 01",
+      courseOneTitle: "Fundamentos & Programação",
+      courseOneText: "Apostilas, listas de exercícios e códigos de base.",
+      moduleTwo: "MÓDULO 02",
+      courseTwoTitle: "Análise de Dados & Modelagem",
+      courseTwoText: "Tutoriais práticos, conjuntos de dados e notebooks comentados.",
+      reposTitle: "Repositórios Recentes",
+      viewAll: "Ver todos",
+      publicationsTitle: "Publicações & Notas Técnicas",
+      publicationPlaceholderTitle: "Adicionar publicação científica selecionada",
+      publicationPlaceholderText: "Autores, periódico/conferência, ano e DOI — preencher com dados verificados.",
+      publicationLink: "Adicionar DOI / PDF",
+      resourcesTitle: "Materiais técnicos e recursos de pesquisa",
+      resourcesText: "Inclua aqui guias, notebooks ou recursos públicos que deseja destacar.",
+      resourcesLink: "Aceder",
+      contactTitle: "Contato",
+      contactText: "Aberto a colaborações em projetos, ensino e pesquisa.",
+      contactCta: "Visitar GitHub",
+      footer: "Publicado com GitHub Pages.",
+      loadingReposTitle: "A carregar repositórios...",
+      loadingReposText: "A ligar à API do GitHub @muralearning"
+    },
+    en: {
+      status: "Active in Research & Teaching",
+      heroSubtitle: "A space for <strong>machine learning, data science, and software development</strong>, with educational and scientific resources.",
+      linksTitle: "Links & Profiles",
+      featuredBadge: "Featured",
+      featuredTitle: "Lab & Notebooks",
+      featuredText: "A curated collection of scripts, practical notebooks, and applied experiments.",
+      featuredCta: "Explore Projects",
+      coursesTitle: "Teaching Materials & Guides",
+      moduleOne: "MODULE 01",
+      courseOneTitle: "Fundamentals & Programming",
+      courseOneText: "Lecture notes, exercise lists, and starter code.",
+      moduleTwo: "MODULE 02",
+      courseTwoTitle: "Data Analysis & Modeling",
+      courseTwoText: "Hands-on tutorials, datasets, and annotated notebooks.",
+      reposTitle: "Recent Repositories",
+      viewAll: "View all",
+      publicationsTitle: "Publications & Technical Notes",
+      publicationPlaceholderTitle: "Add a selected scientific publication",
+      publicationPlaceholderText: "Authors, journal/conference, year, and DOI — replace with verified details.",
+      publicationLink: "Add DOI / PDF",
+      resourcesTitle: "Technical Materials & Research Resources",
+      resourcesText: "Add guides, notebooks, or public resources you would like to feature here.",
+      resourcesLink: "Open item",
+      contactTitle: "Contact",
+      contactText: "Open to collaboration in projects, teaching, and research.",
+      contactCta: "Visit GitHub",
+      footer: "Published with GitHub Pages.",
+      loadingReposTitle: "Loading repositories...",
+      loadingReposText: "Connecting to the GitHub API for @muralearning"
+    }
+  };
+
+  let currentLanguage = "pt";
+  const langButton = $("#lang-toggle");
+  function setLanguage(language) {
+    currentLanguage = language;
+    root.lang = language === "pt" ? "pt-BR" : "en";
+    $$("[data-i18n]").forEach((element) => {
+      const key = element.getAttribute("data-i18n");
+      if (Object.prototype.hasOwnProperty.call(translations[language], key)) {
+        element.innerHTML = translations[language][key];
+      }
+    });
+    if (langButton) langButton.textContent = language === "pt" ? "EN" : "PT";
+    // Update repository-card action labels after the language is changed.
+    $$(".repo-link-text").forEach((element) => {
+      element.textContent = language === "pt" ? "Ver código →" : "View code →";
+    });
+  }
+  if (langButton) {
+    langButton.addEventListener("click", () => setLanguage(currentLanguage === "pt" ? "en" : "pt"));
+  }
+
+  // Load public, non-fork repositories from the user's GitHub account.
+  // Repo information is inserted as text nodes rather than HTML to avoid injection.
+  async function loadGitHubRepos() {
+    const container = $("#github-repos");
+    if (!container) return;
+
+    try {
+      const response = await fetch("https://api.github.com/users/muralearning/repos?sort=updated&per_page=100");
+      if (!response.ok) throw new Error("GitHub API request failed");
+      const repositories = await response.json();
+      const selected = repositories
+        .filter((repo) => !repo.fork)
+        .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+        .slice(0, 2);
+
+      if (!selected.length) throw new Error("No public repositories found");
+      container.replaceChildren();
+
+      selected.forEach((repo) => {
+        const card = document.createElement("a");
+        card.className = "repo-card";
+        card.href = repo.html_url;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+
+        const top = document.createElement("div");
+        top.className = "repo-top";
+        const title = document.createElement("h4");
+        title.textContent = repo.name;
+        const stars = document.createElement("span");
+        stars.className = "repo-stars";
+        stars.textContent = `★ ${repo.stargazers_count}`;
+        top.append(title, stars);
+
+        const description = document.createElement("p");
+        description.textContent = repo.description || (
+          currentLanguage === "pt" ? "Repositório público no GitHub." : "Public GitHub repository."
+        );
+
+        const footer = document.createElement("div");
+        footer.className = "repo-footer";
+        const language = document.createElement("span");
+        language.className = "repo-lang";
+        language.textContent = repo.language || (currentLanguage === "pt" ? "Código" : "Code");
+        const open = document.createElement("span");
+        open.className = "repo-link-text";
+        open.textContent = currentLanguage === "pt" ? "Ver código →" : "View code →";
+        footer.append(language, open);
+
+        card.append(top, description, footer);
+        container.append(card);
+      });
+    } catch (_) {
+      container.replaceChildren();
+      const fallbackCards = [
+        {
+          title: "muralearning",
+          descriptionPt: "Explore projetos públicos, códigos e recursos de pesquisa.",
+          descriptionEn: "Explore public projects, code, and research resources.",
+          href: "https://github.com/muralearning",
+          metaPt: "GitHub",
+          metaEn: "GitHub"
+        },
+        {
+          title: currentLanguage === "pt" ? "Todos os repositórios" : "All repositories",
+          descriptionPt: "Consulte os repositórios públicos e os projetos disponíveis.",
+          descriptionEn: "Browse all available public repositories and projects.",
+          href: "https://github.com/muralearning?tab=repositories",
+          metaPt: "Repositórios",
+          metaEn: "Repositories"
+        }
+      ];
+
+      fallbackCards.forEach((item) => {
+        const card = document.createElement("a");
+        card.href = item.href;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+        card.className = "repo-card";
+
+        const top = document.createElement("div");
+        top.className = "repo-top";
+        const title = document.createElement("h4");
+        title.textContent = item.title;
+        const badge = document.createElement("span");
+        badge.className = "repo-stars";
+        badge.textContent = "GitHub";
+        top.append(title, badge);
+
+        const description = document.createElement("p");
+        description.textContent = currentLanguage === "pt" ? item.descriptionPt : item.descriptionEn;
+
+        const footer = document.createElement("div");
+        footer.className = "repo-footer";
+        const meta = document.createElement("span");
+        meta.className = "repo-lang";
+        meta.textContent = currentLanguage === "pt" ? item.metaPt : item.metaEn;
+        const open = document.createElement("span");
+        open.className = "repo-link-text";
+        open.textContent = currentLanguage === "pt" ? "Explorar →" : "Explore →";
+        footer.append(meta, open);
+
+        card.append(top, description, footer);
+        container.append(card);
+      });
+    }
+  }
+
+  loadGitHubRepos();
+})();

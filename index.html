@@ -1,115 +1,232 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Thiago Murari — professor e pesquisador em inteligência artificial, sistemas complexos e inovação industrial.">
-  <meta name="theme-color" content="#ffffff">
-  <title>Thiago Murari | Professor & Researcher</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MuraLearning | Pesquisa, Ensino & Tecnologia</title>
+  <meta name="description" content="Portal de projetos, materiais de ensino, ciência de dados e pesquisa — MuraLearning." />
+  
+  <!-- Fonte Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
-  <button class="mobile-menu" id="mobile-menu" aria-expanded="false" aria-controls="sidebar">☰ <span data-i18n="menu">Menu</span></button>
-  <div class="page-shell">
-    <aside class="sidebar" id="sidebar">
-      <a class="identity" href="#home">
-        <span class="monogram">TM</span>
-        <span><strong>Thiago Murari</strong><small data-i18n="role_short">Professor & Researcher</small></span>
-      </a>
-      <nav class="side-nav" aria-label="Navegação principal">
-        <a class="nav-link active" href="#home"><span class="nav-symbol">⌂</span><span data-i18n="nav_home">Início</span></a>
-        <a class="nav-link" href="#research"><span class="nav-symbol">⌘</span><span data-i18n="nav_research">Pesquisa</span></a>
-        <a class="nav-link" href="#engagement"><span class="nav-symbol">↗</span><span data-i18n="nav_engagement">Atuação acadêmica</span></a>
-        <a class="nav-link" href="#publications"><span class="nav-symbol">▤</span><span data-i18n="nav_publications">Publicações</span></a>
-        <a class="nav-link" href="#software"><span class="nav-symbol">⌁</span><span data-i18n="nav_software">Software e métodos</span></a>
-        <a class="nav-link" href="#biography"><span class="nav-symbol">◎</span><span data-i18n="nav_bio">Biografia</span></a>
-        <a class="nav-link" href="#contact"><span class="nav-symbol">✉</span><span data-i18n="nav_contact">Contato</span></a>
-      </nav>
-      <div class="sidebar-bottom">
-        <button class="language-button" id="language-button" type="button">EN</button>
-        <div class="social-links">
-          <a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="repositories">Repositórios ↗</a>
-        </div>
-        <p class="sidebar-note" data-i18n="sidebar_note">Pesquisa aplicada, métodos computacionais e inovação.</p>
-      </div>
-    </aside>
 
-    <main class="main-content" id="home">
-      <header class="topline"><span data-i18n="topline">PÁGINA ACADÊMICA PESSOAL</span><span class="availability"><i></i><span data-i18n="open_collab">Aberto a colaborações</span></span></header>
-      <section class="intro-section">
-        <div class="intro-copy">
-          <p class="eyebrow" data-i18n="intro_label">PESQUISA · TECNOLOGIA · SOCIEDADE</p>
-          <h1 data-i18n="headline">A ciência ganha força quando métodos rigorosos encontram problemas reais.</h1>
-          <p class="lead" data-i18n="intro">Sou professor e pesquisador no SENAI CIMATEC. Trabalho na interface entre inovação industrial, inteligência artificial e sistemas complexos, com interesse no desenvolvimento de métodos computacionais confiáveis e aplicações com impacto.</p>
-          <p class="affiliation"><strong data-i18n="position">Professor Adjunto</strong><span> · SENAI CIMATEC</span></p>
-          <div class="intro-links">
-            <a href="#research" class="inline-link" data-i18n="explore_research">Conheça minha pesquisa ↓</a>
-            <a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub ↗</a>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">MuraLearning</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="https://github.com/muralearning" target="_blank" rel="noopener" class="btn-subtle">
+          <i data-lucide="github"></i>
+          <span>GitHub</span>
+        </a>
+        <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Alternar idioma português/inglês" title="Português / English">EN</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Bento Grid Principal -->
+    <main class="bento-grid">
+
+      <!-- 1. Bloco Principal: Apresentação (Ocupa 2 colunas e 2 linhas) -->
+      <section class="card bento-hero">
+        <div class="hero-header">
+          <img 
+            src="https://github.com/muralearning.png" 
+            alt="Foto de perfil MuraLearning" 
+            class="avatar"
+            onerror="this.src='https://ui-avatars.com/api/?name=Mura+Learning&background=2563eb&color=fff&size=128'"
+          />
+          <span class="status-badge">
+            <span class="pulse"></span> <span data-i18n="status">Ativo em Pesquisa & Ensino</span>
+          </span>
+        </div>
+        <div class="hero-content">
+          <h1>MuraLearning</h1>
+          <p class="subtitle" data-i18n="heroSubtitle">
+            Espaço dedicado a <strong>Aprendizagem de Máquina, Ciência de Dados e Desenvolvimento</strong>, com materiais educativos e científicos.
+          </p>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Python</span>
+          <span class="tag">Data Science</span>
+          <span class="tag">Educação</span>
+          <span class="tag">Pesquisa</span>
+        </div>
+      </section>
+
+      <!-- 2. Bloco de Links Rápidos / Redes (1 coluna) -->
+      <section class="card bento-links">
+        <div class="card-header">
+          <i data-lucide="compass" class="card-icon"></i>
+          <h2 data-i18n="linksTitle">Links & Perfis</h2>
+        </div>
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/muralearning" target="_blank" rel="noopener">
+              <i data-lucide="github"></i>
+              <span>GitHub</span>
+              <i data-lucide="arrow-up-right" class="arrow"></i>
+            </a>
+          </li>
+          <li>
+            <!-- Substitua pelo seu link real -->
+            <a href="https://orcid.org/" target="_blank" rel="noopener">
+              <i data-lucide="award"></i>
+              <span>ORCID / Lattes</span>
+              <i data-lucide="arrow-up-right" class="arrow"></i>
+            </a>
+          </li>
+          <li>
+            <!-- Substitua pelo seu link real -->
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+              <i data-lucide="graduation-cap"></i>
+              <span>Google Scholar</span>
+              <i data-lucide="arrow-up-right" class="arrow"></i>
+            </a>
+          </li>
+          <li>
+            <!-- Substitua pelo seu link real -->
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+              <i data-lucide="arrow-up-right" class="arrow"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 3. Bloco de Destaque / Projeto Principal (1 coluna) -->
+      <section class="card bento-featured">
+        <div class="featured-top">
+          <span class="badge-accent" data-i18n="featuredBadge">Em Destaque</span>
+          <i data-lucide="sparkles" class="featured-icon"></i>
+        </div>
+        <h3 data-i18n="featuredTitle">Laboratório & Notebooks</h3>
+        <p data-i18n="featuredText">Coleção interativa de scripts, notebooks práticos e experimentos aplicados.</p>
+        <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="btn-primary">
+          <span data-i18n="featuredCta">Explorar Projetos</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </section>
+
+      <!-- 4. Bloco de Ensino / Disciplinas & Materiais (2 colunas) -->
+      <section class="card bento-courses">
+        <div class="card-header">
+          <i data-lucide="book-open" class="card-icon"></i>
+          <h2 data-i18n="coursesTitle">Materiais de Ensino & Guias</h2>
+        </div>
+        <div class="courses-grid">
+          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="course-item">
+            <div class="course-meta">
+              <span class="course-code" data-i18n="moduleOne">MÓDULO 01</span>
+              <i data-lucide="external-link"></i>
+            </div>
+            <h4 data-i18n="courseOneTitle">Fundamentos & Programação</h4>
+            <p data-i18n="courseOneText">Apostilas, listas de exercícios e códigos de base.</p>
+          </a>
+          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="course-item">
+            <div class="course-meta">
+              <span class="course-code" data-i18n="moduleTwo">MÓDULO 02</span>
+              <i data-lucide="external-link"></i>
+            </div>
+            <h4 data-i18n="courseTwoTitle">Análise de Dados & Modelagem</h4>
+            <p data-i18n="courseTwoText">Tutoriais práticos, conjuntos de dados e notebooks comentados.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. Bloco Dinâmico: Repositórios do GitHub (2 colunas) -->
+      <section class="card bento-repos">
+        <div class="card-header-between">
+          <div class="card-header">
+            <i data-lucide="folder-git-2" class="card-icon"></i>
+            <h2 data-i18n="reposTitle">Repositórios Recentes</h2>
+          </div>
+          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="link-more">
+            <span data-i18n="viewAll">Ver todos</span> <i data-lucide="chevron-right"></i>
+          </a>
+        </div>
+        <div id="github-repos" class="repos-grid">
+          <!-- Carregado automaticamente via JavaScript da conta muralearning -->
+          <div class="repo-card">
+            <h4 data-i18n="loadingReposTitle">A carregar repositórios...</h4>
+            <p data-i18n="loadingReposText">A ligar à API do GitHub @muralearning</p>
           </div>
         </div>
-        <div class="portrait-placeholder" aria-label="Espaço reservado para fotografia profissional">
-          <div class="portrait-initials">TM</div>
-          <span data-i18n="photo_hint">Adicione sua fotografia</span>
+      </section>
+
+      <!-- 6. Bloco de Publicações / Artigos Recentes (3 colunas) -->
+      <section class="card bento-publications">
+        <div class="card-header">
+          <i data-lucide="file-text" class="card-icon"></i>
+          <h2 data-i18n="publicationsTitle">Publicações & Notas Técnicas</h2>
+        </div>
+        <div class="pub-list">
+          <article class="pub-item">
+            <div class="pub-year">PUB.</div>
+            <div class="pub-info">
+              <h4 data-i18n="publicationPlaceholderTitle">Adicionar publicação científica selecionada</h4>
+              <p data-i18n="publicationPlaceholderText">Autores, periódico/conferência, ano e DOI — preencher com dados verificados.</p>
+            </div>
+            <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="pub-link" aria-label="Ler publicação">
+              <span data-i18n="publicationLink">Adicionar DOI / PDF</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-year">REC.</div>
+            <div class="pub-info">
+              <h4 data-i18n="resourcesTitle">Materiais técnicos e recursos de pesquisa</h4>
+              <p data-i18n="resourcesText">Inclua aqui guias, notebooks ou recursos públicos que deseja destacar.</p>
+            </div>
+            <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="pub-link" aria-label="Ler publicação">
+              <span data-i18n="resourcesLink">Aceder</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
         </div>
       </section>
 
-      <section class="content-section" id="research">
-        <div class="section-kicker"><span>01</span><span data-i18n="research_kicker">AGENDA DE PESQUISA</span></div>
-        <h2 data-i18n="research_title">Perguntas que orientam meu trabalho</h2>
-        <p class="section-intro" data-i18n="research_intro">Minha atuação combina experiência industrial e investigação interdisciplinar, conectando formulação conceitual, análise quantitativa e desenvolvimento de ferramentas.</p>
-        <div class="research-list">
-          <article><span class="item-number">01</span><div><h3 data-i18n="r1_title">Sistemas complexos e econofísica</h3><p data-i18n="r1_text">Dependência temporal, correlações cruzadas, multifractalidade e análise de informação em séries temporais.</p><div class="keywords">DCCA · MFDFA · Multifractal analysis · Time series</div></div></article>
-          <article><span class="item-number">02</span><div><h3 data-i18n="r2_title">Inteligência artificial aplicada</h3><p data-i18n="r2_text">Modelos de linguagem, recuperação aumentada por geração (RAG) e extração confiável de informações em contextos industriais.</p><div class="keywords">LLMs · RAG · Reliable AI · Industrial data</div></div></article>
-          <article><span class="item-number">03</span><div><h3 data-i18n="r3_title">Inovação e Indústria 4.0</h3><p data-i18n="r3_text">Capacidades tecnológicas, transformação digital e desenvolvimento de soluções para desafios industriais.</p><div class="keywords">Innovation · Industry 4.0 · Digital transformation</div></div></article>
-          <article><span class="item-number">04</span><div><h3 data-i18n="r4_title">Mobilidade e sustentabilidade</h3><p data-i18n="r4_text">Sistemas sociotécnicos, transições tecnológicas e desafios relacionados à sustentabilidade.</p><div class="keywords">Mobility · Sustainability · Socio-technical systems</div></div></article>
+      <!-- 7. Bloco de Contacto (1 coluna) -->
+      <section class="card bento-contact">
+        <div class="card-header">
+          <i data-lucide="mail" class="card-icon"></i>
+          <h2 data-i18n="contactTitle">Contato</h2>
         </div>
+        <p data-i18n="contactText">Aberto a colaborações em projetos, ensino e pesquisa.</p>
+        <!-- Substitua pelo seu e-mail -->
+        <a href="https://github.com/muralearning" target="_blank" rel="noopener" class="btn-outline">
+          <i data-lucide="send"></i>
+          <span data-i18n="contactCta">Visitar GitHub</span>
+        </a>
       </section>
 
-      <section class="content-section" id="engagement">
-        <div class="section-kicker"><span>02</span><span data-i18n="engagement_kicker">ATUAÇÃO ACADÊMICA</span></div>
-        <h2 data-i18n="engagement_title">Pesquisa, formação e colaboração</h2>
-        <div class="engagement-grid">
-          <article><h3 data-i18n="e1_title">Pós-graduação</h3><p data-i18n="e1_text">Atuação em programas de pós-graduação, orientação e formação interdisciplinar em gestão, tecnologia e modelagem computacional.</p></article>
-          <article><h3 data-i18n="e2_title">Pesquisa aplicada</h3><p data-i18n="e2_text">Participação em iniciativas de pesquisa que conectam instituições, desenvolvimento metodológico e necessidades da indústria.</p></article>
-          <article><h3 data-i18n="e3_title">Colaboração científica</h3><p data-i18n="e3_text">Interesse em projetos interdisciplinares, intercâmbio científico e compartilhamento de métodos e recursos reproduzíveis.</p></article>
-        </div>
-        <p class="editorial-note" data-i18n="verify_note">Nota: revise os cargos, os nomes oficiais das iniciativas e os vínculos institucionais antes da publicação definitiva.</p>
-      </section>
-
-      <section class="content-section" id="publications">
-        <div class="section-kicker"><span>03</span><span data-i18n="publications_kicker">PRODUÇÃO CIENTÍFICA</span></div>
-        <h2 data-i18n="publications_title">Publicações em destaque</h2>
-        <p class="section-intro" data-i18n="publications_intro">Esta seção deve destacar trabalhos representativos, com metadados completos e links persistentes para os artigos.</p>
-        <div class="empty-state"><span class="empty-icon">↗</span><div><h3 data-i18n="pub_add_title">Adicione publicações selecionadas</h3><p data-i18n="pub_add_text">Para cada artigo, inclua título, coautores, periódico ou conferência, ano e DOI. Também é possível conectar ORCID, Google Scholar e Currículo Lattes.</p></div></div>
-        <div class="profile-links"><span data-i18n="academic_profiles">Perfis acadêmicos</span><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer" data-i18n="add_verified_links">Adicionar links verificados →</a></div>
-      </section>
-
-      <section class="content-section" id="software">
-        <div class="section-kicker"><span>04</span><span data-i18n="software_kicker">SOFTWARE E MÉTODOS</span></div>
-        <h2 data-i18n="software_title">Métodos computacionais e recursos abertos</h2>
-        <p class="section-intro" data-i18n="software_intro">Repositórios com código, documentação, testes e exemplos permitem que outros pesquisadores inspecionem, reproduzam e ampliem os resultados.</p>
-        <div class="software-callout"><div><span class="mini-label" data-i18n="github_profile">PERFIL GITHUB</span><h3 data-i18n="software_callout_title">Explore código e ferramentas de pesquisa</h3><p data-i18n="software_callout_text">Acesse os repositórios para encontrar projetos, implementações e recursos computacionais.</p></div><a class="round-arrow" href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositórios do GitHub">↗</a></div>
-      </section>
-
-      <section class="content-section" id="biography">
-        <div class="section-kicker"><span>05</span><span data-i18n="bio_kicker">BIOGRAFIA</span></div>
-        <h2 data-i18n="bio_title">Da engenharia de produto à pesquisa interdisciplinar</h2>
-        <p data-i18n="bio_p1">Minha trajetória profissional inclui experiência em desenvolvimento de produtos industriais e inovação digital, seguida por atuação acadêmica em pesquisa, ensino e desenvolvimento tecnológico.</p>
-        <p data-i18n="bio_p2">Atualmente, meus interesses se concentram na integração entre inteligência artificial, métodos quantitativos, sistemas complexos e inovação, buscando produzir conhecimento rigoroso e ferramentas úteis para problemas concretos.</p>
-        <p class="editorial-note" data-i18n="bio_note">Amplie esta seção com formação acadêmica, marcos profissionais e links para o currículo completo.</p>
-      </section>
-
-      <section class="content-section contact-section" id="contact">
-        <div class="section-kicker"><span>06</span><span data-i18n="contact_kicker">CONTATO</span></div>
-        <h2 data-i18n="contact_title">Vamos construir conexões de pesquisa.</h2>
-        <p class="section-intro" data-i18n="contact_intro">Para conversar sobre colaboração científica, projetos, métodos computacionais ou formação de pesquisadores, entre em contato pelos canais acadêmicos abaixo.</p>
-        <div class="contact-row"><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="repositories">Repositórios ↗</a><span data-i18n="email_placeholder">Adicione seu e-mail institucional</span></div>
-      </section>
-      <footer class="footer"><span>© <span id="year"></span> Thiago Murari</span><span data-i18n="footer_note">Página acadêmica pessoal · Atualizada periodicamente</span><a href="#home" data-i18n="back_top">Voltar ao topo ↑</a></footer>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>© <span id="year"></span> MuraLearning. <span data-i18n="footer">Publicado com GitHub Pages.</span></p>
+    </footer>
   </div>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
