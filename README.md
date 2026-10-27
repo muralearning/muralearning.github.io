@@ -1,28 +1,34 @@
-# MuraLearning — Bento Grid
+# MuraLearning — perfil acadêmico Bento Grid
 
-Site estático para GitHub Pages, baseado nos arquivos HTML e CSS fornecidos.
+Site estático para GitHub Pages, baseado no HTML/CSS Bento Grid fornecido e atualizado para uma apresentação acadêmica pessoal.
 
 ## Estrutura
 
-- `index.html` — página principal
-- `assets/css/style.css` — estilos Bento Grid
-- `assets/js/main.js` — alternância de tema, idioma, ano e carregamento dos repositórios públicos do GitHub
-- `assets/favicon.svg` — ícone do site
+- `index.html` — página principal, perfis acadêmicos e publicações selecionadas.
+- `assets/css/style.css` — layout Bento Grid, temas claro/escuro e responsividade.
+- `assets/js/main.js` — alternância PT/EN, tema, ano do rodapé e carregamento de repositórios públicos.
+- `assets/favicon.svg` — ícone do site.
 
-## Publicar no GitHub Pages
+## Publicar ou atualizar
 
-1. Crie ou abra o repositório `muralearning.github.io`.
-2. Copie todos os arquivos desta pasta para a raiz do repositório, mantendo a estrutura `assets/`.
+1. Extraia o ZIP.
+2. Copie os arquivos para a raiz do repositório `muralearning.github.io`, mantendo a pasta `assets/`.
 3. Faça commit e push para a branch `main`.
-4. Em **Settings → Pages**, selecione **Deploy from a branch**, branch `main`, pasta `/ (root)`.
-5. A página deverá ficar disponível em `https://muralearning.github.io/`.
+4. Em **Settings → Pages**, confirme `Deploy from a branch`, branch `main`, pasta `/ (root)`.
+5. A página deverá ser publicada em `https://muralearning.github.io/`.
 
-## Antes de publicar
+## O que foi corrigido
 
-- Substitua os links genéricos de ORCID/Lattes, Google Scholar e LinkedIn pelos perfis corretos.
-- Atualize as publicações e os materiais de ensino com títulos, URLs, DOI e informações verificadas.
-- Se desejar disponibilizar um endereço de e-mail, substitua o link do botão de contato pelo endereço correto.
-- O carregamento automático dos repositórios depende do acesso à API pública do GitHub e de disponibilidade da conexão.
-- A fonte Inter e os ícones Lucide são carregados por CDN, portanto dependem de conexão à internet.
+- Identidade acadêmica, instituição, áreas de atuação e resumo profissional no cartão principal.
+- Links substituídos por perfis específicos: ORCID, Ciência Vitae, FAPESP e DBLP.
+- Publicações selecionadas substituídas por trabalhos com DOI verificável.
+- Cartões que antes levavam a `#` passaram a apontar para publicações ou perfis correspondentes.
+- Metadados SEO e Open Graph/Twitter adicionados.
+- JavaScript separado e melhorado: timeout da API do GitHub, fallback em caso de erro, manipulação segura do texto dos repositórios e tradução PT/EN dos novos conteúdos.
+- Melhorias de acessibilidade com labels, foco visível e respeito a `prefers-reduced-motion`.
 
-O site inclui alternância de tema claro/escuro, alternância de idioma Português/Inglês e layout responsivo para computadores, tablets e telemóveis.
+## Observações
+
+- A API pública do GitHub, os ícones Lucide e a fonte Inter dependem de acesso à internet. Se a API do GitHub falhar, a página exibe cartões de fallback em vez de permanecer indefinidamente no estado de carregamento.
+- O link FAPESP aponta para o perfil de pesquisador que também remete ao currículo Lattes, ORCID e citações. O perfil individual do Google Scholar e um e-mail de contato não foram adicionados porque os endereços exatos não foram confirmados. A área de contato encaminha ao perfil acadêmico, evitando um endereço fictício.
+- Os títulos e DOIs das publicações foram conferidos em páginas bibliográficas públicas. Revise periodicamente a seleção e os metadados.

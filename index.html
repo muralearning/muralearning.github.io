@@ -3,230 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MuraLearning | Pesquisa, Ensino & Tecnologia</title>
-  <meta name="description" content="Portal de projetos, materiais de ensino, ciência de dados e pesquisa — MuraLearning." />
-  
-  <!-- Fonte Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Ícones Lucide -->
+  <title>Dr. Thiago Barros Murari | Pesquisa, Ensino e Tecnologia</title>
+  <meta name="description" content="Página acadêmica de Thiago Barros Murari: inteligência artificial, inovação industrial, Indústria 4.0, sistemas complexos e ciência de dados." />
+  <meta name="theme-color" content="#f4f5f7" />
+  <meta name="author" content="Thiago Barros Murari" />
+  <link rel="canonical" href="https://muralearning.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dr. Thiago Barros Murari | Pesquisa, Ensino e Tecnologia" />
+  <meta property="og:description" content="Pesquisa aplicada, ensino, inteligência artificial e inovação industrial." />
+  <meta property="og:url" content="https://muralearning.github.io/" />
+  <meta property="og:image" content="https://github.com/muralearning.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Dr. Thiago Barros Murari | Pesquisa, Ensino e Tecnologia" />
+  <meta name="twitter:description" content="Pesquisa aplicada, ensino, inteligência artificial e inovação industrial." />
+  <meta name="twitter:image" content="https://github.com/muralearning.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest"></script>
-  
-  <!-- Estilos -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
-
   <div class="container">
-    <!-- Cabeçalho -->
     <header class="topbar">
-      <div class="brand">
-        <span class="brand-dot"></span>
+      <a href="#home" class="brand" aria-label="MuraLearning — início">
+        <span class="brand-dot" aria-hidden="true"></span>
         <span class="brand-name">MuraLearning</span>
-      </div>
+      </a>
       <div class="topbar-actions">
-        <a href="https://github.com/muralearning" target="_blank" rel="noopener" class="btn-subtle">
-          <i data-lucide="github"></i>
-          <span>GitHub</span>
+        <a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer" class="btn-subtle" aria-label="Abrir perfil MuraLearning no GitHub">
+          <i data-lucide="github" aria-hidden="true"></i><span>GitHub</span>
         </a>
-        <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Alternar idioma português/inglês" title="Português / English">EN</button>
-        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema claro/escuro" title="Alternar tema">
-          <i data-lucide="moon" class="icon-moon"></i>
-          <i data-lucide="sun" class="icon-sun"></i>
+        <button id="lang-toggle" class="icon-btn lang-btn" type="button" aria-label="Switch language to English" title="Português / English">EN</button>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <i data-lucide="moon" class="icon-moon" aria-hidden="true"></i>
+          <i data-lucide="sun" class="icon-sun" aria-hidden="true"></i>
         </button>
       </div>
     </header>
 
-    <!-- Bento Grid Principal -->
-    <main class="bento-grid">
-
-      <!-- 1. Bloco Principal: Apresentação (Ocupa 2 colunas e 2 linhas) -->
-      <section class="card bento-hero">
+    <main class="bento-grid" id="home">
+      <section class="card bento-hero" aria-labelledby="hero-title">
         <div class="hero-header">
-          <img 
-            src="https://github.com/muralearning.png" 
-            alt="Foto de perfil MuraLearning" 
-            class="avatar"
-            onerror="this.src='https://ui-avatars.com/api/?name=Mura+Learning&background=2563eb&color=fff&size=128'"
-          />
-          <span class="status-badge">
-            <span class="pulse"></span> <span data-i18n="status">Ativo em Pesquisa & Ensino</span>
-          </span>
+          <img id="profile-avatar" src="https://github.com/muralearning.png" alt="Foto de perfil de Thiago Barros Murari" class="avatar" width="64" height="64" loading="eager" />
+          <span class="status-badge"><span class="pulse" aria-hidden="true"></span><span data-i18n="status">Professor e pesquisador</span></span>
         </div>
         <div class="hero-content">
-          <h1>MuraLearning</h1>
-          <p class="subtitle" data-i18n="heroSubtitle">
-            Espaço dedicado a <strong>Aprendizagem de Máquina, Ciência de Dados e Desenvolvimento</strong>, com materiais educativos e científicos.
-          </p>
+          <p class="eyebrow" data-i18n="eyebrow">Pesquisa · Ensino · Inovação</p>
+          <h1 id="hero-title">Dr. Thiago Barros Murari</h1>
+          <p class="hero-role" data-i18n="heroRole">Professor e pesquisador no Centro Universitário SENAI CIMATEC</p>
+          <p class="subtitle" data-i18n="heroSubtitle">Coordenador do PPG em Gestão e Tecnologia Industrial (GETEC) e professor no PPG em Modelagem Computacional e Tecnologia Industrial (MCTI). Desenvolvo pesquisa aplicada em inteligência artificial, inovação industrial e sistemas complexos.</p>
         </div>
-        <div class="hero-tags">
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Python</span>
-          <span class="tag">Data Science</span>
-          <span class="tag">Educação</span>
-          <span class="tag">Pesquisa</span>
+        <div class="hero-tags" aria-label="Áreas de atuação" data-i18n-aria-label="areasLabel">
+          <span class="tag" data-i18n="tagAI">Inteligência Artificial</span>
+          <span class="tag" data-i18n="tagIndustry">Indústria 4.0</span>
+          <span class="tag" data-i18n="tagComplex">Sistemas Complexos</span>
+          <span class="tag" data-i18n="tagData">Ciência de Dados</span>
+          <span class="tag" data-i18n="tagDigital">Transformação Digital</span>
         </div>
       </section>
 
-      <!-- 2. Bloco de Links Rápidos / Redes (1 coluna) -->
-      <section class="card bento-links">
+      <section class="card bento-links" aria-labelledby="links-heading">
         <div class="card-header">
-          <i data-lucide="compass" class="card-icon"></i>
-          <h2 data-i18n="linksTitle">Links & Perfis</h2>
+          <i data-lucide="compass" class="card-icon" aria-hidden="true"></i>
+          <h2 id="links-heading" data-i18n="linksTitle">Perfis acadêmicos</h2>
         </div>
         <ul class="link-list">
-          <li>
-            <a href="https://github.com/muralearning" target="_blank" rel="noopener">
-              <i data-lucide="github"></i>
-              <span>GitHub</span>
-              <i data-lucide="arrow-up-right" class="arrow"></i>
-            </a>
-          </li>
-          <li>
-            <!-- Substitua pelo seu link real -->
-            <a href="https://orcid.org/" target="_blank" rel="noopener">
-              <i data-lucide="award"></i>
-              <span>ORCID / Lattes</span>
-              <i data-lucide="arrow-up-right" class="arrow"></i>
-            </a>
-          </li>
-          <li>
-            <!-- Substitua pelo seu link real -->
-            <a href="https://scholar.google.com/" target="_blank" rel="noopener">
-              <i data-lucide="graduation-cap"></i>
-              <span>Google Scholar</span>
-              <i data-lucide="arrow-up-right" class="arrow"></i>
-            </a>
-          </li>
-          <li>
-            <!-- Substitua pelo seu link real -->
-            <a href="https://linkedin.com/" target="_blank" rel="noopener">
-              <i data-lucide="linkedin"></i>
-              <span>LinkedIn</span>
-              <i data-lucide="arrow-up-right" class="arrow"></i>
-            </a>
-          </li>
+          <li><a href="https://orcid.org/0000-0001-5598-2679" target="_blank" rel="noopener noreferrer"><i data-lucide="award" aria-hidden="true"></i><span>ORCID</span><i data-lucide="arrow-up-right" class="arrow" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.cienciavitae.pt/0618-1478-64A1" target="_blank" rel="noopener noreferrer"><i data-lucide="file-user" aria-hidden="true"></i><span data-i18n="cvLink">Currículo — Ciência Vitae</span><i data-lucide="arrow-up-right" class="arrow" aria-hidden="true"></i></a></li>
+          <li><a href="https://bv.fapesp.br/pt/pesquisador/734034/thiago-barros-murari/" target="_blank" rel="noopener noreferrer"><i data-lucide="graduation-cap" aria-hidden="true"></i><span data-i18n="fapespLink">Perfil FAPESP / Lattes</span><i data-lucide="arrow-up-right" class="arrow" aria-hidden="true"></i></a></li>
+          <li><a href="https://dblp.org/pid/323/3545.html" target="_blank" rel="noopener noreferrer"><i data-lucide="book-marked" aria-hidden="true"></i><span data-i18n="bibliographyLink">Produção bibliográfica</span><i data-lucide="arrow-up-right" class="arrow" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i><span>GitHub</span><i data-lucide="arrow-up-right" class="arrow" aria-hidden="true"></i></a></li>
         </ul>
       </section>
 
-      <!-- 3. Bloco de Destaque / Projeto Principal (1 coluna) -->
-      <section class="card bento-featured">
-        <div class="featured-top">
-          <span class="badge-accent" data-i18n="featuredBadge">Em Destaque</span>
-          <i data-lucide="sparkles" class="featured-icon"></i>
-        </div>
-        <h3 data-i18n="featuredTitle">Laboratório & Notebooks</h3>
-        <p data-i18n="featuredText">Coleção interativa de scripts, notebooks práticos e experimentos aplicados.</p>
-        <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="btn-primary">
-          <span data-i18n="featuredCta">Explorar Projetos</span>
-          <i data-lucide="arrow-right"></i>
-        </a>
+      <section class="card bento-featured" aria-labelledby="featured-title">
+        <div class="featured-top"><span class="badge-accent" data-i18n="featuredBadge">Projetos abertos</span><i data-lucide="sparkles" class="featured-icon" aria-hidden="true"></i></div>
+        <h2 id="featured-title" data-i18n="featuredTitle">Código, notebooks e pesquisa aplicada</h2>
+        <p data-i18n="featuredText">Explore repositórios, scripts e recursos técnicos publicados no GitHub.</p>
+        <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-primary"><span data-i18n="featuredCta">Explorar repositórios</span><i data-lucide="arrow-right" aria-hidden="true"></i></a>
       </section>
 
-      <!-- 4. Bloco de Ensino / Disciplinas & Materiais (2 colunas) -->
-      <section class="card bento-courses">
-        <div class="card-header">
-          <i data-lucide="book-open" class="card-icon"></i>
-          <h2 data-i18n="coursesTitle">Materiais de Ensino & Guias</h2>
-        </div>
+      <section class="card bento-courses" aria-labelledby="research-heading">
+        <div class="card-header"><i data-lucide="microscope" class="card-icon" aria-hidden="true"></i><h2 id="research-heading" data-i18n="researchTitle">Pesquisa e temas de atuação</h2></div>
         <div class="courses-grid">
-          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="course-item">
-            <div class="course-meta">
-              <span class="course-code" data-i18n="moduleOne">MÓDULO 01</span>
-              <i data-lucide="external-link"></i>
-            </div>
-            <h4 data-i18n="courseOneTitle">Fundamentos & Programação</h4>
-            <p data-i18n="courseOneText">Apostilas, listas de exercícios e códigos de base.</p>
+          <a href="https://doi.org/10.1109/ACCESS.2025.3626204" target="_blank" rel="noopener noreferrer" class="course-item">
+            <div class="course-meta"><span class="course-code" data-i18n="researchAreaOne">IA APLICADA</span><i data-lucide="external-link" aria-hidden="true"></i></div>
+            <h3 data-i18n="researchOneTitle">Inteligência artificial e aprendizagem de máquina</h3>
+            <p data-i18n="researchOneText">Modelos preditivos e métodos computacionais aplicados a problemas reais.</p>
           </a>
-          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="course-item">
-            <div class="course-meta">
-              <span class="course-code" data-i18n="moduleTwo">MÓDULO 02</span>
-              <i data-lucide="external-link"></i>
-            </div>
-            <h4 data-i18n="courseTwoTitle">Análise de Dados & Modelagem</h4>
-            <p data-i18n="courseTwoText">Tutoriais práticos, conjuntos de dados e notebooks comentados.</p>
+          <a href="https://doi.org/10.1186/s42467-021-00010-1" target="_blank" rel="noopener noreferrer" class="course-item">
+            <div class="course-meta"><span class="course-code" data-i18n="researchAreaTwo">INDÚSTRIA 4.0</span><i data-lucide="external-link" aria-hidden="true"></i></div>
+            <h3 data-i18n="researchTwoTitle">Inovação industrial e transformação digital</h3>
+            <p data-i18n="researchTwoText">Tecnologias digitais, sistemas complexos, mobilidade e sustentabilidade.</p>
           </a>
         </div>
       </section>
 
-      <!-- 5. Bloco Dinâmico: Repositórios do GitHub (2 colunas) -->
-      <section class="card bento-repos">
+      <section class="card bento-repos" aria-labelledby="repos-heading">
         <div class="card-header-between">
-          <div class="card-header">
-            <i data-lucide="folder-git-2" class="card-icon"></i>
-            <h2 data-i18n="reposTitle">Repositórios Recentes</h2>
-          </div>
-          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="link-more">
-            <span data-i18n="viewAll">Ver todos</span> <i data-lucide="chevron-right"></i>
-          </a>
+          <div class="card-header"><i data-lucide="folder-git-2" class="card-icon" aria-hidden="true"></i><h2 id="repos-heading" data-i18n="reposTitle">Repositórios recentes</h2></div>
+          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" class="link-more"><span data-i18n="viewAll">Ver todos</span><i data-lucide="chevron-right" aria-hidden="true"></i></a>
         </div>
-        <div id="github-repos" class="repos-grid">
-          <!-- Carregado automaticamente via JavaScript da conta muralearning -->
-          <div class="repo-card">
-            <h4 data-i18n="loadingReposTitle">A carregar repositórios...</h4>
-            <p data-i18n="loadingReposText">A ligar à API do GitHub @muralearning</p>
-          </div>
+        <div id="github-repos" class="repos-grid" aria-live="polite" aria-busy="true">
+          <div class="repo-card"><h3 data-i18n="loadingReposTitle">A carregar repositórios…</h3><p data-i18n="loadingReposText">A consultar os repositórios públicos de @muralearning.</p></div>
         </div>
       </section>
 
-      <!-- 6. Bloco de Publicações / Artigos Recentes (3 colunas) -->
-      <section class="card bento-publications">
-        <div class="card-header">
-          <i data-lucide="file-text" class="card-icon"></i>
-          <h2 data-i18n="publicationsTitle">Publicações & Notas Técnicas</h2>
-        </div>
+      <section class="card bento-publications" aria-labelledby="publications-heading">
+        <div class="card-header"><i data-lucide="file-text" class="card-icon" aria-hidden="true"></i><h2 id="publications-heading" data-i18n="publicationsTitle">Publicações selecionadas</h2></div>
         <div class="pub-list">
           <article class="pub-item">
-            <div class="pub-year">PUB.</div>
-            <div class="pub-info">
-              <h4 data-i18n="publicationPlaceholderTitle">Adicionar publicação científica selecionada</h4>
-              <p data-i18n="publicationPlaceholderText">Autores, periódico/conferência, ano e DOI — preencher com dados verificados.</p>
-            </div>
-            <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="pub-link" aria-label="Ler publicação">
-              <span data-i18n="publicationLink">Adicionar DOI / PDF</span>
-              <i data-lucide="arrow-up-right"></i>
-            </a>
+            <div class="pub-year">2026</div>
+            <div class="pub-info"><h3>Wavelet-Based Hybrid Model for Short-Term Wind Speed Forecasting in Coastal Brazil</h3><p>IEEE Access, 14, 63121–63140 (2026). <span data-i18n="pubAuthorsOne">Coautoria em estudo de previsão de velocidade do vento.</span></p></div>
+            <a href="https://doi.org/10.1109/ACCESS.2026.3683005" target="_blank" rel="noopener noreferrer" class="pub-link" aria-label="Abrir DOI da publicação sobre previsão de vento"><span>DOI</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
           </article>
-
           <article class="pub-item">
-            <div class="pub-year">REC.</div>
-            <div class="pub-info">
-              <h4 data-i18n="resourcesTitle">Materiais técnicos e recursos de pesquisa</h4>
-              <p data-i18n="resourcesText">Inclua aqui guias, notebooks ou recursos públicos que deseja destacar.</p>
-            </div>
-            <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener" class="pub-link" aria-label="Ler publicação">
-              <span data-i18n="resourcesLink">Aceder</span>
-              <i data-lucide="arrow-up-right"></i>
-            </a>
+            <div class="pub-year">2025</div>
+            <div class="pub-info"><h3>An Approach for Parkinson’s Disease Detection Based on Artificial Intelligence Techniques</h3><p>IEEE Access, 13, 214761–214771 (2025). <span data-i18n="pubAuthorsTwo">Pesquisa sobre detecção de Parkinson usando técnicas de IA.</span></p></div>
+            <a href="https://doi.org/10.1109/ACCESS.2025.3626204" target="_blank" rel="noopener noreferrer" class="pub-link" aria-label="Abrir DOI da publicação sobre detecção de Parkinson"><span>DOI</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="pub-item">
+            <div class="pub-year">2024</div>
+            <div class="pub-info"><h3>Evaluating Design Guidelines for Intuitive, Therefore Sustainable, Virtual Reality Authoring Tools</h3><p>Sustainability, 16(5), 1744 (2024). <span data-i18n="pubAuthorsThree">Pesquisa sobre diretrizes de design para ferramentas de autoria em realidade virtual.</span></p></div>
+            <a href="https://doi.org/10.3390/su16051744" target="_blank" rel="noopener noreferrer" class="pub-link" aria-label="Abrir DOI da publicação sobre realidade virtual"><span>DOI</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
           </article>
         </div>
+        <a href="https://dblp.org/pid/323/3545.html" target="_blank" rel="noopener noreferrer" class="link-more all-publications"><span data-i18n="allPublications">Ver mais publicações</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
       </section>
 
-      <!-- 7. Bloco de Contacto (1 coluna) -->
-      <section class="card bento-contact">
-        <div class="card-header">
-          <i data-lucide="mail" class="card-icon"></i>
-          <h2 data-i18n="contactTitle">Contato</h2>
-        </div>
-        <p data-i18n="contactText">Aberto a colaborações em projetos, ensino e pesquisa.</p>
-        <!-- Substitua pelo seu e-mail -->
-        <a href="https://github.com/muralearning" target="_blank" rel="noopener" class="btn-outline">
-          <i data-lucide="send"></i>
-          <span data-i18n="contactCta">Visitar GitHub</span>
-        </a>
+      <section class="card bento-contact" aria-labelledby="contact-heading">
+        <div class="card-header"><i data-lucide="contact" class="card-icon" aria-hidden="true"></i><h2 id="contact-heading" data-i18n="contactTitle">Colaboração</h2></div>
+        <p data-i18n="contactText">Para conhecer a trajetória acadêmica e iniciativas de pesquisa, consulte os perfis e projetos públicos.</p>
+        <a href="https://bv.fapesp.br/pt/pesquisador/734034/thiago-barros-murari/" target="_blank" rel="noopener noreferrer" class="btn-outline"><i data-lucide="user-round" aria-hidden="true"></i><span data-i18n="contactCta">Ver perfil acadêmico</span></a>
       </section>
-
     </main>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-      <p>© <span id="year"></span> MuraLearning. <span data-i18n="footer">Publicado com GitHub Pages.</span></p>
-    </footer>
+    <footer class="footer"><p>© <span id="year"></span> Thiago Barros Murari · MuraLearning · <span data-i18n="footer">Publicado com GitHub Pages.</span></p></footer>
   </div>
-
   <script src="assets/js/main.js"></script>
 </body>
 </html>
