@@ -37,9 +37,9 @@
 
   const translations = {
     pt: {
-      status: "Professor e pesquisador", eyebrow: "Pesquisa · Ensino · Inovação",
+      status: "Professor e pesquisador", eyebrow: "Pesquisa · Inovação",
       tagAI: "Inteligência Artificial", tagIndustry: "Indústria 4.0", tagComplex: "Sistemas Complexos", tagData: "Ciência de Dados", tagDigital: "Transformação Digital",
-      heroRole: "Professor e pesquisador no Centro Universitário SENAI CIMATEC",
+      heroRole: "Professor e pesquisador na Universidade SENAI CIMATEC",
       heroSubtitle: "Coordenador do PPG em Gestão e Tecnologia Industrial (GETEC) e professor no PPG em Modelagem Computacional e Tecnologia Industrial (MCTI). Desenvolvo pesquisa aplicada em inteligência artificial, inovação industrial e sistemas complexos.",
       areasLabel: "Áreas de atuação", socialProfilesLabel: "Perfis sociais", linkedinLabel: "LinkedIn de Thiago Barros Murari", xLabel: "Abrir X", linksTitle: "Perfis acadêmicos", cvLink: "Currículo — Ciência Vitae",
       fapespLink: "Perfil FAPESP / Lattes", bibliographyLink: "Produção bibliográfica",
@@ -62,9 +62,9 @@
       repoFallbackTitle: "Explore todos os repositórios", repoFallbackText: "Consulte os projetos, bibliotecas e recursos públicos disponíveis."
     },
     en: {
-      status: "Professor and researcher", eyebrow: "Research · Teaching · Innovation",
+      status: "Professor and researcher", eyebrow: "Research · Innovation",
       tagAI: "Artificial Intelligence", tagIndustry: "Industry 4.0", tagComplex: "Complex Systems", tagData: "Data Science", tagDigital: "Digital Transformation",
-      heroRole: "Professor and researcher at Centro Universitário SENAI CIMATEC",
+      heroRole: "Professor and researcher at SENAI CIMATEC University",
       heroSubtitle: "Coordinator of the Graduate Program in Industrial Management and Technology (GETEC) and faculty member in the Graduate Program in Computational Modeling and Industrial Technology (MCTI). My applied research focuses on artificial intelligence, industrial innovation, and complex systems.",
       areasLabel: "Research areas", socialProfilesLabel: "Social profiles", linkedinLabel: "Thiago Barros Murari on LinkedIn", xLabel: "Open X", linksTitle: "Academic profiles", cvLink: "Curriculum — Ciência Vitae",
       fapespLink: "FAPESP researcher profile", bibliographyLink: "Bibliographic record",
