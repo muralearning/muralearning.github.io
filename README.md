@@ -32,3 +32,8 @@ Site estático para GitHub Pages, baseado no HTML/CSS Bento Grid fornecido e atu
 - A API pública do GitHub, os ícones Lucide e a fonte Inter dependem de acesso à internet. Se a API do GitHub falhar, a página exibe cartões de fallback em vez de permanecer indefinidamente no estado de carregamento.
 - O link FAPESP aponta para o perfil de pesquisador que também remete ao currículo Lattes, ORCID e citações. O perfil individual do Google Scholar e um e-mail de contato não foram adicionados porque os endereços exatos não foram confirmados. A área de contato encaminha ao perfil acadêmico, evitando um endereço fictício.
 - Os títulos e DOIs das publicações foram conferidos em páginas bibliográficas públicas. Revise periodicamente a seleção e os metadados.
+
+
+## Nota sobre as redes sociais
+
+O LinkedIn está ligado ao perfil público identificado para Thiago Murari. O botão do X está temporariamente ligado a `https://x.com/`; substitua esse destino pelo URL do perfil pessoal antes de publicar, pois não foi possível confirmar um identificador público inequívoco.
