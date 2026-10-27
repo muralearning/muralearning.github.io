@@ -3,116 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Thiago Murari — pesquisador, professor e profissional de inovação, inteligência artificial e sistemas complexos.">
-  <meta name="theme-color" content="#101a2b">
-  <title>Thiago Murari | Pesquisa, Inovação e IA</title>
+  <meta name="description" content="Thiago Murari — professor e pesquisador em inteligência artificial, sistemas complexos e inovação industrial.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Thiago Murari | Professor & Researcher</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Thiago Murari — início"><span class="brand-mark">TM</span><span>Thiago Murari</span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      <nav id="main-nav" aria-label="Navegação principal">
-        <a href="#about" data-i18n="nav_about">Sobre</a>
-        <a href="#research" data-i18n="nav_research">Pesquisa</a>
-        <a href="#projects" data-i18n="nav_projects">Projetos</a>
-        <a href="#software" data-i18n="nav_software">Software</a>
-        <a href="#publications" data-i18n="nav_publications">Publicações</a>
-        <a href="#contact" data-i18n="nav_contact">Contato</a>
-        <button class="lang-switch" id="lang-switch" type="button" aria-label="Switch language">EN</button>
+  <button class="mobile-menu" id="mobile-menu" aria-expanded="false" aria-controls="sidebar">☰ <span data-i18n="menu">Menu</span></button>
+  <div class="page-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="identity" href="#home">
+        <span class="monogram">TM</span>
+        <span><strong>Thiago Murari</strong><small data-i18n="role_short">Professor & Researcher</small></span>
+      </a>
+      <nav class="side-nav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#home"><span class="nav-symbol">⌂</span><span data-i18n="nav_home">Início</span></a>
+        <a class="nav-link" href="#research"><span class="nav-symbol">⌘</span><span data-i18n="nav_research">Pesquisa</span></a>
+        <a class="nav-link" href="#engagement"><span class="nav-symbol">↗</span><span data-i18n="nav_engagement">Atuação acadêmica</span></a>
+        <a class="nav-link" href="#publications"><span class="nav-symbol">▤</span><span data-i18n="nav_publications">Publicações</span></a>
+        <a class="nav-link" href="#software"><span class="nav-symbol">⌁</span><span data-i18n="nav_software">Software e métodos</span></a>
+        <a class="nav-link" href="#biography"><span class="nav-symbol">◎</span><span data-i18n="nav_bio">Biografia</span></a>
+        <a class="nav-link" href="#contact"><span class="nav-symbol">✉</span><span data-i18n="nav_contact">Contato</span></a>
       </nav>
-    </div>
-  </header>
+      <div class="sidebar-bottom">
+        <button class="language-button" id="language-button" type="button">EN</button>
+        <div class="social-links">
+          <a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="repositories">Repositórios ↗</a>
+        </div>
+        <p class="sidebar-note" data-i18n="sidebar_note">Pesquisa aplicada, métodos computacionais e inovação.</p>
+      </div>
+    </aside>
 
-  <main id="main">
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero_eyebrow">PESQUISA · TECNOLOGIA · INOVAÇÃO</p>
-          <h1 data-i18n="hero_title">Conectando pesquisa, inteligência artificial e inovação industrial.</h1>
-          <p class="hero-lead" data-i18n="hero_lead">Sou Thiago Murari, professor e pesquisador interessado em métodos computacionais, sistemas complexos e tecnologias que transformam a indústria.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#research" data-i18n="hero_cta1">Conheça minha pesquisa</a>
-            <a class="button button-secondary" href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <main class="main-content" id="home">
+      <header class="topline"><span data-i18n="topline">PÁGINA ACADÊMICA PESSOAL</span><span class="availability"><i></i><span data-i18n="open_collab">Aberto a colaborações</span></span></header>
+      <section class="intro-section">
+        <div class="intro-copy">
+          <p class="eyebrow" data-i18n="intro_label">PESQUISA · TECNOLOGIA · SOCIEDADE</p>
+          <h1 data-i18n="headline">A ciência ganha força quando métodos rigorosos encontram problemas reais.</h1>
+          <p class="lead" data-i18n="intro">Sou professor e pesquisador no SENAI CIMATEC. Trabalho na interface entre inovação industrial, inteligência artificial e sistemas complexos, com interesse no desenvolvimento de métodos computacionais confiáveis e aplicações com impacto.</p>
+          <p class="affiliation"><strong data-i18n="position">Professor Adjunto</strong><span> · SENAI CIMATEC</span></p>
+          <div class="intro-links">
+            <a href="#research" class="inline-link" data-i18n="explore_research">Conheça minha pesquisa ↓</a>
+            <a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub ↗</a>
           </div>
-          <div class="hero-meta"><span class="status-dot"></span><span data-i18n="hero_meta">Professor e pesquisador · SENAI CIMATEC</span></div>
         </div>
-        <aside class="hero-card" aria-label="Resumo das áreas de atuação">
-          <div class="orb orb-one"></div><div class="orb orb-two"></div>
-          <p class="card-label" data-i18n="focus_label">FOCOS DE ATUAÇÃO</p>
-          <div class="focus-item"><span class="focus-number">01</span><span data-i18n="focus1">Inteligência Artificial e LLMs</span></div>
-          <div class="focus-item"><span class="focus-number">02</span><span data-i18n="focus2">Sistemas complexos e análise multifractal</span></div>
-          <div class="focus-item"><span class="focus-number">03</span><span data-i18n="focus3">Inovação e Indústria 4.0</span></div>
-          <div class="focus-item"><span class="focus-number">04</span><span data-i18n="focus4">Transformação digital e sustentabilidade</span></div>
-          <p class="card-foot" data-i18n="card_foot">Pesquisa aplicada · Métodos abertos · Colaboração</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section section-light" id="about">
-      <div class="container two-col">
-        <div><p class="eyebrow" data-i18n="about_eyebrow">SOBRE</p><h2 data-i18n="about_title">Experiência aplicada, curiosidade científica.</h2></div>
-        <div class="prose">
-          <p data-i18n="about_p1">Atuo na interface entre pesquisa, tecnologia e inovação, combinando experiência em desenvolvimento de produtos industriais com pesquisa em métodos computacionais e transformação digital.</p>
-          <p data-i18n="about_p2">Sou professor adjunto no SENAI CIMATEC e participo de iniciativas de pós-graduação e pesquisa aplicada. Meus interesses incluem inteligência artificial, sistemas complexos, mobilidade, sustentabilidade e tecnologias para a Indústria 4.0.</p>
-          <p class="note" data-i18n="about_note">Esta página é uma apresentação inicial. Os cargos, vínculos, indicadores e links acadêmicos devem ser revisados antes da publicação definitiva.</p>
+        <div class="portrait-placeholder" aria-label="Espaço reservado para fotografia profissional">
+          <div class="portrait-initials">TM</div>
+          <span data-i18n="photo_hint">Adicione sua fotografia</span>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="research">
-      <div class="container">
-        <p class="eyebrow" data-i18n="research_eyebrow">PESQUISA</p>
-        <div class="section-heading"><h2 data-i18n="research_title">Temas que investigo</h2><p data-i18n="research_intro">Uma visão interdisciplinar que aproxima fundamentos teóricos, métodos computacionais e problemas reais.</p></div>
-        <div class="cards-grid">
-          <article class="info-card"><span class="card-icon">⌘</span><h3 data-i18n="r1_title">Inteligência Artificial</h3><p data-i18n="r1_text">LLMs, recuperação aumentada por geração (RAG), extração confiável de informações e aplicações industriais.</p><div class="tag-row"><span>LLMs</span><span>RAG</span><span>AI</span></div></article>
-          <article class="info-card"><span class="card-icon">⌁</span><h3 data-i18n="r2_title">Sistemas complexos</h3><p data-i18n="r2_text">Correlações, dependência temporal, análise multifractal e relações entre séries temporais.</p><div class="tag-row"><span>DCCA</span><span>MFDFA</span><span>Time series</span></div></article>
-          <article class="info-card"><span class="card-icon">◈</span><h3 data-i18n="r3_title">Inovação industrial</h3><p data-i18n="r3_text">Capacidades tecnológicas, transformação digital, Indústria 4.0 e desenvolvimento de soluções aplicadas.</p><div class="tag-row"><span>Industry 4.0</span><span>Innovation</span></div></article>
-          <article class="info-card"><span class="card-icon">◎</span><h3 data-i18n="r4_title">Mobilidade e sustentabilidade</h3><p data-i18n="r4_text">Sistemas sociotécnicos, transições tecnológicas e desafios de sustentabilidade.</p><div class="tag-row"><span>Mobility</span><span>Sustainability</span></div></article>
+      <section class="content-section" id="research">
+        <div class="section-kicker"><span>01</span><span data-i18n="research_kicker">AGENDA DE PESQUISA</span></div>
+        <h2 data-i18n="research_title">Perguntas que orientam meu trabalho</h2>
+        <p class="section-intro" data-i18n="research_intro">Minha atuação combina experiência industrial e investigação interdisciplinar, conectando formulação conceitual, análise quantitativa e desenvolvimento de ferramentas.</p>
+        <div class="research-list">
+          <article><span class="item-number">01</span><div><h3 data-i18n="r1_title">Sistemas complexos e econofísica</h3><p data-i18n="r1_text">Dependência temporal, correlações cruzadas, multifractalidade e análise de informação em séries temporais.</p><div class="keywords">DCCA · MFDFA · Multifractal analysis · Time series</div></div></article>
+          <article><span class="item-number">02</span><div><h3 data-i18n="r2_title">Inteligência artificial aplicada</h3><p data-i18n="r2_text">Modelos de linguagem, recuperação aumentada por geração (RAG) e extração confiável de informações em contextos industriais.</p><div class="keywords">LLMs · RAG · Reliable AI · Industrial data</div></div></article>
+          <article><span class="item-number">03</span><div><h3 data-i18n="r3_title">Inovação e Indústria 4.0</h3><p data-i18n="r3_text">Capacidades tecnológicas, transformação digital e desenvolvimento de soluções para desafios industriais.</p><div class="keywords">Innovation · Industry 4.0 · Digital transformation</div></div></article>
+          <article><span class="item-number">04</span><div><h3 data-i18n="r4_title">Mobilidade e sustentabilidade</h3><p data-i18n="r4_text">Sistemas sociotécnicos, transições tecnológicas e desafios relacionados à sustentabilidade.</p><div class="keywords">Mobility · Sustainability · Socio-technical systems</div></div></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-dark" id="projects">
-      <div class="container">
-        <p class="eyebrow" data-i18n="projects_eyebrow">PROJETOS</p>
-        <div class="section-heading"><h2 data-i18n="projects_title">Da pergunta ao método, do método à aplicação.</h2><p data-i18n="projects_intro">Seleção inicial de frentes de trabalho. Adicione links, parceiros e resultados públicos conforme os projetos forem revisados.</p></div>
-        <div class="project-list">
-          <article class="project-row"><div class="project-index">01</div><div><h3 data-i18n="p1_title">IA para informação industrial confiável</h3><p data-i18n="p1_text">Modelos baseados em LLM com recuperação de conhecimento para extrair informações confiáveis de relatórios industriais.</p></div><span class="project-type" data-i18n="p1_type">IA aplicada</span></article>
-          <article class="project-row"><div class="project-index">02</div><div><h3 data-i18n="p2_title">Métodos para análise de séries temporais</h3><p data-i18n="p2_text">Desenvolvimento e validação de ferramentas para correlação, multifractalidade e informação preditiva em múltiplas escalas.</p></div><span class="project-type" data-i18n="p2_type">Métodos computacionais</span></article>
-          <article class="project-row"><div class="project-index">03</div><div><h3 data-i18n="p3_title">Tecnologias para a Indústria 4.0</h3><p data-i18n="p3_text">Pesquisa aplicada e colaboração interdisciplinar em inovação, transformação digital e desenvolvimento de capacidades tecnológicas.</p></div><span class="project-type" data-i18n="p3_type">Inovação</span></article>
+      <section class="content-section" id="engagement">
+        <div class="section-kicker"><span>02</span><span data-i18n="engagement_kicker">ATUAÇÃO ACADÊMICA</span></div>
+        <h2 data-i18n="engagement_title">Pesquisa, formação e colaboração</h2>
+        <div class="engagement-grid">
+          <article><h3 data-i18n="e1_title">Pós-graduação</h3><p data-i18n="e1_text">Atuação em programas de pós-graduação, orientação e formação interdisciplinar em gestão, tecnologia e modelagem computacional.</p></article>
+          <article><h3 data-i18n="e2_title">Pesquisa aplicada</h3><p data-i18n="e2_text">Participação em iniciativas de pesquisa que conectam instituições, desenvolvimento metodológico e necessidades da indústria.</p></article>
+          <article><h3 data-i18n="e3_title">Colaboração científica</h3><p data-i18n="e3_text">Interesse em projetos interdisciplinares, intercâmbio científico e compartilhamento de métodos e recursos reproduzíveis.</p></article>
         </div>
-      </div>
-    </section>
+        <p class="editorial-note" data-i18n="verify_note">Nota: revise os cargos, os nomes oficiais das iniciativas e os vínculos institucionais antes da publicação definitiva.</p>
+      </section>
 
-    <section class="section section-light" id="software">
-      <div class="container two-col software-layout">
-        <div><p class="eyebrow" data-i18n="software_eyebrow">SOFTWARE E RECURSOS</p><h2 data-i18n="software_title">Métodos que podem ser inspecionados, reproduzidos e reutilizados.</h2><p class="section-desc" data-i18n="software_intro">Use esta área para destacar repositórios com documentação, exemplos, testes e instruções de citação.</p><a class="text-link" href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="software_link">Explorar repositórios no GitHub ↗</a></div>
-        <div class="repo-placeholder"><div class="repo-top"><span class="repo-dot"></span><span class="repo-dot"></span><span class="repo-dot"></span><span class="repo-caption">RESEARCH TOOLKIT</span></div><div class="repo-line long"></div><div class="repo-line medium"></div><div class="repo-line short"></div><div class="repo-stat"><span>Python</span><span data-i18n="repo_stat">Métodos · Dados · Documentação</span></div><p class="note" data-i18n="repo_note">Substitua este cartão por links para repositórios específicos já públicos e documentados.</p></div>
-      </div>
-    </section>
+      <section class="content-section" id="publications">
+        <div class="section-kicker"><span>03</span><span data-i18n="publications_kicker">PRODUÇÃO CIENTÍFICA</span></div>
+        <h2 data-i18n="publications_title">Publicações em destaque</h2>
+        <p class="section-intro" data-i18n="publications_intro">Esta seção deve destacar trabalhos representativos, com metadados completos e links persistentes para os artigos.</p>
+        <div class="empty-state"><span class="empty-icon">↗</span><div><h3 data-i18n="pub_add_title">Adicione publicações selecionadas</h3><p data-i18n="pub_add_text">Para cada artigo, inclua título, coautores, periódico ou conferência, ano e DOI. Também é possível conectar ORCID, Google Scholar e Currículo Lattes.</p></div></div>
+        <div class="profile-links"><span data-i18n="academic_profiles">Perfis acadêmicos</span><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer" data-i18n="add_verified_links">Adicionar links verificados →</a></div>
+      </section>
 
-    <section class="section" id="publications">
-      <div class="container">
-        <p class="eyebrow" data-i18n="pub_eyebrow">PRODUÇÃO CIENTÍFICA</p>
-        <div class="section-heading"><h2 data-i18n="pub_title">Publicações selecionadas</h2><p data-i18n="pub_intro">Mantenha esta lista curta e atualizada, priorizando artigos representativos e links permanentes.</p></div>
-        <div class="publication-placeholder"><span class="publication-symbol">↗</span><div><h3 data-i18n="pub_placeholder_title">Adicione seus artigos e identificadores</h3><p data-i18n="pub_placeholder_text">Inclua título, autores, periódico ou conferência, ano e DOI. Você também pode direcionar para ORCID, Google Scholar, Lattes ou uma página institucional.</p></div><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer" aria-label="GitHub">↗</a></div>
-        <div class="publication-placeholder"><span class="publication-symbol">＋</span><div><h3 data-i18n="pub_profiles_title">Perfis acadêmicos</h3><p data-i18n="pub_profiles_text">Insira os links verificados para seus perfis acadêmicos e identificadores persistentes.</p></div></div>
-      </div>
-    </section>
+      <section class="content-section" id="software">
+        <div class="section-kicker"><span>04</span><span data-i18n="software_kicker">SOFTWARE E MÉTODOS</span></div>
+        <h2 data-i18n="software_title">Métodos computacionais e recursos abertos</h2>
+        <p class="section-intro" data-i18n="software_intro">Repositórios com código, documentação, testes e exemplos permitem que outros pesquisadores inspecionem, reproduzam e ampliem os resultados.</p>
+        <div class="software-callout"><div><span class="mini-label" data-i18n="github_profile">PERFIL GITHUB</span><h3 data-i18n="software_callout_title">Explore código e ferramentas de pesquisa</h3><p data-i18n="software_callout_text">Acesse os repositórios para encontrar projetos, implementações e recursos computacionais.</p></div><a class="round-arrow" href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositórios do GitHub">↗</a></div>
+      </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-box">
-        <div><p class="eyebrow" data-i18n="contact_eyebrow">CONTATO E COLABORAÇÃO</p><h2 data-i18n="contact_title">Vamos conversar sobre pesquisa aplicada.</h2><p data-i18n="contact_text">Estou interessado em intercâmbio científico, colaboração interdisciplinar e desenvolvimento de métodos e tecnologias com impacto real.</p></div>
-        <div class="contact-links"><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="contact_repos">Repositórios ↗</a><a href="#home" data-i18n="back_top">Voltar ao topo ↑</a></div>
-      </div>
-    </section>
-  </main>
+      <section class="content-section" id="biography">
+        <div class="section-kicker"><span>05</span><span data-i18n="bio_kicker">BIOGRAFIA</span></div>
+        <h2 data-i18n="bio_title">Da engenharia de produto à pesquisa interdisciplinar</h2>
+        <p data-i18n="bio_p1">Minha trajetória profissional inclui experiência em desenvolvimento de produtos industriais e inovação digital, seguida por atuação acadêmica em pesquisa, ensino e desenvolvimento tecnológico.</p>
+        <p data-i18n="bio_p2">Atualmente, meus interesses se concentram na integração entre inteligência artificial, métodos quantitativos, sistemas complexos e inovação, buscando produzir conhecimento rigoroso e ferramentas úteis para problemas concretos.</p>
+        <p class="editorial-note" data-i18n="bio_note">Amplie esta seção com formação acadêmica, marcos profissionais e links para o currículo completo.</p>
+      </section>
 
-  <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year"></span> Thiago Murari</span><span data-i18n="footer_text">Pesquisa aberta, colaboração e rigor científico.</span><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">@muralearning</a></div></footer>
+      <section class="content-section contact-section" id="contact">
+        <div class="section-kicker"><span>06</span><span data-i18n="contact_kicker">CONTATO</span></div>
+        <h2 data-i18n="contact_title">Vamos construir conexões de pesquisa.</h2>
+        <p class="section-intro" data-i18n="contact_intro">Para conversar sobre colaboração científica, projetos, métodos computacionais ou formação de pesquisadores, entre em contato pelos canais acadêmicos abaixo.</p>
+        <div class="contact-row"><a href="https://github.com/muralearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/muralearning?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="repositories">Repositórios ↗</a><span data-i18n="email_placeholder">Adicione seu e-mail institucional</span></div>
+      </section>
+      <footer class="footer"><span>© <span id="year"></span> Thiago Murari</span><span data-i18n="footer_note">Página acadêmica pessoal · Atualizada periodicamente</span><a href="#home" data-i18n="back_top">Voltar ao topo ↑</a></footer>
+    </main>
+  </div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

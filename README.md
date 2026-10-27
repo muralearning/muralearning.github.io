@@ -1,43 +1,29 @@
-# Site pessoal — Thiago Murari
+# Thiago Murari — Personal Academic Website
 
-Site acadêmico bilíngue (português/inglês) para publicação com GitHub Pages.
+Bilingual academic profile (Portuguese/English), inspired by the editorial structure of academic faculty websites. The design and wording are original.
 
-## Publicar
+## Publish on GitHub Pages
 
-1. Entre em sua conta `muralearning` no GitHub.
-2. Crie um repositório público chamado **`muralearning.github.io`**.
-3. Envie todos os arquivos e pastas deste pacote para a raiz do repositório. O arquivo `index.html` precisa ficar na raiz.
-4. No repositório, abra **Settings → Pages**.
-5. Em **Build and deployment**, escolha **Deploy from a branch**; selecione `main` e `/ (root)` e salve.
-6. Aguarde a publicação. O endereço esperado é <https://muralearning.github.io/>.
+1. Create a public repository named `muralearning.github.io`.
+2. Upload the contents of this folder to the repository root. Keep `index.html` at the root.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment**, select **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
+5. After deployment, visit https://muralearning.github.io/.
 
-## Estrutura
+## Files
 
-```text
-.
-├── index.html
-├── README.md
-└── assets/
-    ├── favicon.svg
-    ├── css/
-    │   └── style.css
-    └── js/
-        └── main.js
-```
+- `index.html`: page structure and content
+- `assets/css/style.css`: typography, layout, responsive styles
+- `assets/js/main.js`: PT/EN language switch, mobile navigation, active section
+- `assets/favicon.svg`: site icon
 
-## Personalização antes da publicação
+## Before publishing
 
-- Revise a biografia, os cargos e as afiliações no `index.html`.
-- Substitua os espaços reservados de publicações por títulos, autores, ano e DOI verificados.
-- Acrescente links confirmados para ORCID, Google Scholar, Currículo Lattes e e-mail institucional.
-- Inclua links para repositórios específicos, com README, licença, exemplos e instruções de citação.
-- Se quiser usar fotografia, adicione um arquivo próprio em `assets/` e atualize o HTML.
-- Revise as versões em português e inglês em `assets/js/main.js`.
-- Confirme que não há informações internas, dados pessoais ou material não autorizado para publicação.
+- Replace the portrait placeholder with a professional photograph you have permission to publish.
+- Add verified ORCID, Google Scholar, Lattes, institutional profile, and email links.
+- Add selected publications with correct titles, authors, year, journal/conference, and DOI.
+- Verify current job titles, official affiliations, programs, and project names.
+- Add direct links to repositories with public documentation.
+- Review both Portuguese and English text. Do not publish confidential or internal information.
 
-## Notas técnicas
-
-- HTML, CSS e JavaScript puros; sem etapa de build.
-- O seletor PT/EN altera os textos da página no navegador.
-- O site usa Google Fonts como aprimoramento visual; fontes de sistema permanecem como alternativa.
-- O conteúdo é público quando publicado. Não inclua informações confidenciais.
+This site uses plain HTML, CSS, and JavaScript; no build step is required. Google Fonts are used as an optional enhancement, with system fallbacks.
