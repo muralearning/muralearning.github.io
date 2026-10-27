@@ -1,12 +1,12 @@
 # MuraLearning — perfil acadêmico Bento Grid
 
-Site estático para GitHub Pages, baseado no HTML/CSS Bento Grid fornecido e atualizado para uma apresentação acadêmica pessoal.
+Site estático para GitHub Pages, com apresentação acadêmica, links oficiais, publicações selecionadas, repositórios públicos e indicadores dinâmicos de OpenAlex.
 
 ## Estrutura
 
-- `index.html` — página principal, perfis acadêmicos e publicações selecionadas.
+- `index.html` — página principal, perfil, links acadêmicos e publicações.
 - `assets/css/style.css` — layout Bento Grid, temas claro/escuro e responsividade.
-- `assets/js/main.js` — alternância PT/EN, tema, ano do rodapé e carregamento de repositórios públicos.
+- `assets/js/main.js` — alternância PT/EN, tema, repositórios do GitHub e métricas/tópicos dinâmicos de OpenAlex.
 - `assets/favicon.svg` — ícone do site.
 
 ## Publicar ou atualizar
@@ -15,25 +15,21 @@ Site estático para GitHub Pages, baseado no HTML/CSS Bento Grid fornecido e atu
 2. Copie os arquivos para a raiz do repositório `muralearning.github.io`, mantendo a pasta `assets/`.
 3. Faça commit e push para a branch `main`.
 4. Em **Settings → Pages**, confirme `Deploy from a branch`, branch `main`, pasta `/ (root)`.
-5. A página deverá ser publicada em `https://muralearning.github.io/`.
+5. A publicação ficará disponível em `https://muralearning.github.io/`.
 
-## O que foi corrigido
+## Alterações desta versão
 
-- Identidade acadêmica, instituição, áreas de atuação e resumo profissional no cartão principal.
-- Links substituídos por perfis específicos: ORCID, Ciência Vitae, FAPESP e DBLP.
-- Publicações selecionadas substituídas por trabalhos com DOI verificável.
-- Cartões que antes levavam a `#` passaram a apontar para publicações ou perfis correspondentes.
-- Metadados SEO e Open Graph/Twitter adicionados.
-- JavaScript separado e melhorado: timeout da API do GitHub, fallback em caso de erro, manipulação segura do texto dos repositórios e tradução PT/EN dos novos conteúdos.
-- Melhorias de acessibilidade com labels, foco visível e respeito a `prefers-reduced-motion`.
+- Atualização do texto de apresentação e do vínculo institucional para a redação solicitada.
+- Inclusão do perfil no X (`@tmurari`) e do e-mail institucional `thiago.murari@fieb.org.br`.
+- Seção de perfis acadêmicos reduzida a ORCID, Lattes e Google Scholar.
+- Seção renomeada para **Temas de Atuação**.
+- Métricas de trabalhos, citações, índice h e índice i10 e tópicos de pesquisa carregados diretamente do perfil OpenAlex `A5030022714` ao abrir a página; atualização periódica a cada 30 minutos durante visitas longas.
+- Publicações selecionadas substituídas pelas três URLs fornecidas.
+- Link “Ver mais publicações” apontando para o Google Scholar informado.
 
-## Observações
+## Fontes dinâmicas e observações
 
-- A API pública do GitHub, os ícones Lucide e a fonte Inter dependem de acesso à internet. Se a API do GitHub falhar, a página exibe cartões de fallback em vez de permanecer indefinidamente no estado de carregamento.
-- O link FAPESP aponta para o perfil de pesquisador que também remete ao currículo Lattes, ORCID e citações. O perfil individual do Google Scholar e um e-mail de contato não foram adicionados porque os endereços exatos não foram confirmados. A área de contato encaminha ao perfil acadêmico, evitando um endereço fictício.
-- Os títulos e DOIs das publicações foram conferidos em páginas bibliográficas públicas. Revise periodicamente a seleção e os metadados.
-
-
-## Nota sobre as redes sociais
-
-O LinkedIn está ligado ao perfil público identificado para Thiago Murari. O botão do X está temporariamente ligado a `https://x.com/`; substitua esse destino pelo URL do perfil pessoal antes de publicar, pois não foi possível confirmar um identificador público inequívoco.
+- Métricas e tópicos: [OpenAlex — A5030022714](https://openalex.org/authors/A5030022714), consultado pela API pública `https://api.openalex.org/authors/A5030022714`.
+- Repositórios: API pública do GitHub. Ambos os serviços dependem de acesso à internet; se uma API falhar, a página informa que os dados não estão disponíveis em vez de inventar valores.
+- O título completo e os metadados da terceira publicação (link ScienceDirect fornecido) não foram recuperados na consulta de edição; por isso, o cartão usa uma descrição neutra e abre o URL indicado.
+- A fonte Inter e os ícones Lucide são carregados por CDN.
